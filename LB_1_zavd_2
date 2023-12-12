@@ -1,1 +1,28 @@
+class ListNode:
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
 
+def swap_pairs(head):
+    if not head or not head.next:
+        return head
+
+    next_node = head.next
+    head.val, next_node.val = next_node.val, head.val
+    head.next = swap_pairs(next_node.next)
+
+    return head
+
+def print_linked_list(head):
+    current = head
+    while current:
+        print(current.val, end=" ")
+        current = current.next
+    print()
+
+head = ListNode(1, ListNode(2, ListNode(3, ListNode(4))))
+print_linked_list(head)
+
+result_head = swap_pairs(head)
+
+print_linked_list(result_head)
