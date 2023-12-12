@@ -9,15 +9,3 @@ def fibonacci(n):
 print(fibonacci(2))  
 print(fibonacci(3))  
 print(fibonacci(4))  
-
-# Завдання 4:
-def climb_stairs(n):
-    if n == 1:
-        return 1
-    elif n == 2:
-        return 2
-    else:
-        return climb_stairs(n - 1) + climb_stairs(n - 2)
-
-print(climb_stairs(2))  
-print(climb_stairs(3))  
