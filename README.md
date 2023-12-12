@@ -1,2 +1,2 @@
 # For_sharaga
-Labaratorni_roboti
+Катрошенко Андрій ІПЗ-3ск.
