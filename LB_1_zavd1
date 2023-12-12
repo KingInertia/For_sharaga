@@ -1,0 +1,13 @@
+def reverse_string_recursive(s, index=None):
+    if index is None:
+        index = len(s) - 1
+
+    if index < 0:
+        return
+
+    print(s[index], end="")
+    reverse_string_recursive(s, index - 1)
+
+# Приклад використання:
+input_str = "tiger"
+reverse_string_recursive(input_str)
